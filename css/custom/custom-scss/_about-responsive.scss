@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+    .about-it-works-item {
+        h4 {
+            display: block;
+        }
+
+        .about-it-works-img {
+            display: none;
+        }
+    }
+
+    .about-fix-responsive {
+        margin-top: 50px;
+    }
+
+    .about-investors {
+        .nav li, .nav li:last-child {
+            width: auto;
+            max-width: 250px;
+        }
+    }
+}

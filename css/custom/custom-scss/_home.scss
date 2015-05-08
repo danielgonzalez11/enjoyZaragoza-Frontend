@@ -1,0 +1,129 @@
+h1 {
+    color: $brand-brown;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.see-all-btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.see-all {
+    a {
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.home-about-wrap {
+    padding: 20px 0;
+    background-color: #ECECEC;
+    h2 {
+        text-align: center;
+        color: $brand-brown;
+    }
+
+    p {
+        color: white;
+        font-size: 16px;
+    }
+}
+
+.home-partners-wrap {
+    padding: 20px 0;
+    h2 {
+        text-align: center;
+        display: block;
+    }
+    .ashoka {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+    .afi, .ffp {
+        padding-top: 34px;
+    }
+    .ueia {
+        padding-top: 14px;
+    }
+    .triodos {
+        padding-top: 16px;
+    }
+    img {
+        &:hover {
+            opacity: 0.7;
+        }
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+}
+
+.home-about-item-title, .home-about-item-subtitle {
+  color: $brand-brown;
+  display: block;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.home-about-item-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: $brand-orange;
+}
+
+.home-about-item-subtitle {
+  font-size: 16px;
+}
+
+.home-icon {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.home-what-is-wrap{
+   background-color : $brand-orange;
+   color: $brand-brown;
+   padding: 1%;
+   font-size: 16px;
+}
+
+.home-what-is-impact{
+        color: #fff;
+
+}
+
+.btn-white-brown{
+      border-radius: 6px !important;
+      margin-top:8%; 
+}
+
+.important-Notice-wrap{
+    background-color: #C0C0C0;
+    padding:1%;
+    color: $brand-brown;
+
+    ul{
+        list-style-type: decimal;
+    }
+
+    .important-Notice-link{
+        color: $brand-brown;
+    }
+}

@@ -1,0 +1,154 @@
+<form id="individual-form">
+
+  <div class="form-group">
+    <label for="form-name" class="pull-left">
+      <span class="label-text">Nombre:</span>
+    </label>
+    <label for="form-name" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+    <div class="form-control-wrap">
+      <input type="text" class="form-control form-control-inline" id="form-name" name="name" minlength="2" maxlength="60" required value="" placeholder="Escribe aquí tu nombre">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="form-surname" class="pull-left">
+      <span class="label-text">Apellidos:</span>
+    </label>
+    <label for="form-surname" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+    <div class="form-control-wrap">
+      <input type="text" class="form-control form-control-inline" id="form-surname" name="surname" minlength="2" maxlength="60" required value="" placeholder="Escribe aquí tus apellidos">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5">
+      <div class="form-group">
+        <label for="nif" class="pull-left">
+          <span class="label-text">Nº de documento:</span>
+        </label>
+        <label for="nif" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="nif" name="id_number" maxlength="20" required value="" placeholder="XXXXXXXX">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-offset-2 col-md-5">
+      <div class="form-group">
+        <label for="civil" class="pull-left">
+          <span class="label-text">Estado civil:</span>
+        </label>
+        <div class="form-control-wrap">
+          <select class="form-control form-control-inline" id="civil" name="status" required>
+            <option value="single">Soltero/a</option>
+            <option value="married">Casado/a</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5">
+      <div class="form-group">
+        <label for="phone" class="pull-left">
+          <span class="label-text">Teléfono:</span>
+        </label>
+        <label for="phone" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="phone" name="phone" minlength="9" maxlength="16" required value="" placeholder="+34 XXXXXXXXX">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-offset-1 col-md-6">
+      <div class="form-group progress-spinner">
+        <label for="nationality" class="pull-left">
+          <span class="label-text">Nacionalidad:</span>
+        </label>
+        <div class="form-control-wrap">
+          <select class="form-control form-control-inline saving" id="nationality" name="nationality" required>
+            <option value="86">Islas Georgias del Sur y Sandwich del Sur</option>
+            <option value="196">Senegal</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="form-group">
+        <label for="address" class="pull-left">
+          <span class="label-text">Dirección:</span>
+        </label>
+        <label for="address" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="address" name="address" minlength="5" maxlength="255" required value="" placeholder="C/ ...">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="addressNum" class="pull-left">
+          <span class="label-text">Número:</span>
+        </label>
+        <label for="addressNum" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="addressNum" name="address_num" minlength="1" maxlength="10" required value="" placeholder="XX">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-1 col-md-5">
+      <div class="form-group">
+        <label for="postcode" class="pull-left">
+          <span class="label-text">Código postal:</span>
+        </label>
+        <label for="postcode" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="postcode" name="postcode" minlength="5" maxlength="10" required value="" placeholder="XXXXX">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="city" class="pull-left">
+          <span class="label-text">Ciudad:</span>
+        </label>
+        <label for="city" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="city" name="city" minlength="2" maxlength="50" required value="" placeholder="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-1 col-md-6">
+      <div class="form-group">
+        <label for="province" class="pull-left">
+          <span class="label-text">Provincia:</span>
+        </label>
+        <label for="province" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="province" name="state" minlength="2" maxlength="50" required value="" placeholder="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="form-group">
+        <label for="country" class="pull-left">
+          <span class="label-text">País:</span>
+        </label>
+        <div class="form-control-wrap">
+          <select class="form-control form-control-inline" id="country" name="country" required>
+            <option value="86">Islas Georgias del Sur y Sandwich del Sur</option>
+            <option value="196">Senegal</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</form>

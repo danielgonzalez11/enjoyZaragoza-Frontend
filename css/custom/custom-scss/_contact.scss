@@ -1,0 +1,33 @@
+.contactForm {
+	background-color: #e9e9e9;
+  padding: 10px;
+  margin: 20px 10px 10px;
+
+  .btn {
+    color: #432918 !important;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 16px;
+  }
+}
+
+.contact {
+  margin-top: 30px;
+  font-size: 16px;
+
+  ul {
+    list-style: none; 
+    margin-top:10px;
+    padding-left:20px;
+  }
+
+  li {
+    font-size: 20px;
+    list-style: none; 
+    margin: 5px;
+  }
+
+  .fa {
+    margin-right: 10px;
+  }
+}

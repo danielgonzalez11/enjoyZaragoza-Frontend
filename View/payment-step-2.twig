@@ -1,0 +1,85 @@
+{% extends "layout.twig" %}
+
+{% block body %}
+    {# title #}
+    <div class="title-wrap">
+        <h1>Asistente de inversión</h1>
+    </div>
+    {# arrows #}
+    <div class="container">
+        <div class="row">
+            <div class="payment-steps">
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-right">
+                        1) Indentificación
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left arrow-right-active active">
+                        2) Riesgos
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left arrow-right">
+                        3) Inversión
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left">
+                        4) Confirmación y pago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# next and previous buttons #}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="payment-nav-wrapper">
+                    <span class="pull-right payment-nav">
+                        <a href="#">Siguiente ></a>
+                    </span>
+                    <span class="pull-left payment-nav">
+                        <a href="#">< Anterior</a>
+                    </span>
+                    <h2>Paso 2/4</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# big title #}
+    <div class="container">
+        <div class="row">
+            <div class="payment-steps-description">
+                <div class="col-md-12"> 
+                    <h3>Riesgos de la inversión</h3>
+                    <h4>Frase que anime a ver el vídeo</h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-4by3">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DKLaBqlqZeI"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita autem eius sequi non ipsa iusto, magni maiores asperiores perspiciatis tempora neque error, sit, repellendus doloribus tenetur distinctio nostrum! Quas, natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium unde adipisci earum repellendus. Dignissimos hic est ex consectetur, repudiandae sit obcaecati culpa ea commodi blanditiis labore saepe quidem quisquam quasi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita autem eius sequi non ipsa iusto, magni maiores asperiores perspiciatis tempora neque error, sit, repellendus doloribus tenetur distinctio nostrum! Quas, natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium unde adipisci earum repellendus. Dignissimos hic est ex consectetur, repudiandae sit obcaecati culpa ea commodi blanditiis labore saepe quidem quisquam quasi.</p>
+
+                    <input type="checkbox" name="agree-risks" id="agree-risks" value="" class="checkbox-inline" tabindex="1">
+                      
+                    <label for="agree-risks" class="agree-risks">
+                        Por la presente acredito tener capacidad legal suficiente para comprometer la inversión a nombre de la empresa que represento.
+                    </label>
+
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <button class="btn btn-orange pull-right btn-next">Seguir adelante >></button>
+            </div>
+
+
+        </div>
+    </div>
+
+{% endblock %}

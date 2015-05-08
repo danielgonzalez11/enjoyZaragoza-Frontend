@@ -1,0 +1,114 @@
+.container {
+    max-width: 960px;
+}
+
+// Headings
+
+h1, h2, h3, h4, h5, h6, p, header {
+    font-family: $font-headings;
+}
+
+label {
+    font-size: 14px;
+    font-family: $font-text;
+    font-weight: bold !important;
+    font-style: italic;
+}
+
+
+a, span {
+    color: $brand-orange;
+    @include custom-transition(all, $general-hover-time);
+
+    &:hover {
+        text-decoration: none;
+        opacity: $general-hover-opacity;
+        color: inherit;
+    }
+}
+.close span { color: inherit; }
+
+// forms
+
+.form-group {
+    margin-top: 10px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+// alerts
+.alert {
+    margin: 20px auto;
+}
+
+.title-tag {
+  $triangle-width: 20px;
+  $img-width: 80px;
+  $img-height: 75px;
+
+  $img-pad-top: 2px;
+  $img-pad-right: 9px;
+  $img-pad-bottom: 7px;
+  $img-pad-left: 7px;
+  $line-height: 1.2em;
+
+  box-sizing: content-box;
+  display: inline-block;
+  line-height: $line-height;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: $brand-orange;
+  padding: 7px 10px;
+  position: relative;
+  margin-right: $triangle-width;
+
+  
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    right: -$triangle-width;
+    width: $triangle-width;
+    height: 100%;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgdmlld0JveD0iMCAwIDIgMiI+PHBvbHlnb24gcG9pbnRzPSIwLDAgMCwyIDIsMSIgZmlsbD0iI0YzOTIwMCIvPjwvc3ZnPg==');
+    background-size: 100% 100%;
+  }
+
+  &.with-image {
+    padding-left: $img-width/2;
+    margin-left: $img-width/2 -$img-pad-left;
+  }
+
+  img {
+    position: absolute;
+    top: -$img-pad-top - 10;
+    left: -$img-width/2;
+    width: $img-width;
+  }
+
+  &.rows-2 {
+    height: $line-height*1 + 1em;
+  }
+
+  &.rows-3 {
+    height: $line-height*2 + 1em;
+  }
+
+  &.rows-2,
+  &.rows-3 {
+    display: table;
+    img {
+      top: -$img-pad-top - 3;
+    }
+  }
+
+  .tag-vcenter {
+    color: inherit;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

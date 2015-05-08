@@ -1,0 +1,70 @@
+<footer>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-3 col-xs-6">
+        <h4>La Bolsa Social</h4>
+        <ul>
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Cómo funciona</a></li>
+          <li><a href="#">Condiciones de uso</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          {#
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Condiciones generales de contratación</a></li>
+          #}
+        </ul>
+      </div>
+
+      <div class="col-sm-3 col-xs-6">
+        <h4>Contacto</h4>
+        <p>Si tienes dudas, puedes contactar con nosotros a través del <a href="/contact">formulario de contacto</a> o acceder a nuestro <a href="/faq">centro de ayuda</a>.</p>
+      </div>
+
+    <div class="clearfix visible-xs-block"></div>
+
+      <div class="col-sm-3 col-xs-6">
+        <h4>Newsletter</h4>
+        <p>Mantente al día de las novedades de la Bolsa Social</p>
+        
+        <form class="form-inline" id="newsletter" name="newsletter" action="" method="post">
+          <div class="form-group">
+            <input type="email" class="form-control" name="emailNewsletter" id="emailNewsletter" value="" placeholder="Indica tu e-mail" required>
+
+            <input type="submit" class="btn btn-orange" name="sendNewsletter" id="sendNewsletter" value="Enviar">
+          </div>
+
+          {% if newsletter_footer %}
+            {% if newsletter_footer.id is not empty %}
+              <div class="alert alert-success" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                ¡Registro añadido!</div>
+            {% else %}
+              <div class="alert alert-danger" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                Ocurrió un error</div>
+            {% endif %}
+          {% endif %}
+        </form>
+      </div>
+
+      <div class="col-sm-3 col-xs-6">
+        <h4>Redes Sociales</h4>
+        <ul class="social-icons">
+          <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+          <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+          <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
+        </ul>
+      </div>
+
+      {# second line #}
+
+      <div class="col-xs-12">
+        <div class="footer-final">
+          <p>La Bolsa Social SL. C. Alameda 22, 28014 Madrid</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</footer>

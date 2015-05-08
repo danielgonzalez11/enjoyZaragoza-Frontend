@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+{# block head #}
+{% block head %}
+{% include 'head.twig' %}
+{% endblock %}
+</head>
+{# / block head #}
+
+<body>
+{# header nav #}
+{% block header %}
+{% include 'header.twig' %}
+{% endblock %} 
+{# / header nav #}
+
+<div id="body-wrap">
+
+{% block body %}
+
+
+
+{% endblock %}
+{# / block body #}
+</div>{# end body wrap #}
+
+{# footer #}
+{% block footer %}
+{% include 'footer.twig' %}
+{% include 'modal-login.twig' %}
+{% endblock %}
+{# / footer #}    
+
+{# scripts #}
+{% block scripts %}
+{% include 'scripts.twig' %}
+{% endblock %}
+{# / scripts #}
+   
+</body>
+</html>

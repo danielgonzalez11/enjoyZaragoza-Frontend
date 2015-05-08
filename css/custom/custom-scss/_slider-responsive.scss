@@ -1,0 +1,61 @@
+@media (max-width: 992px) {
+    .caption-wrap {
+    
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        .btn-white {
+            font-size: 14px;
+            padding: 3px 5px;
+        }
+
+    }
+
+    .carousel-caption {
+        height: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        height: auto;
+        //bottom: 25% !important;
+        bottom: 5% !important;
+    }
+}
+
+@media (max-width: 570px) {
+    
+    .carousel-indicators {
+        bottom: 1px;
+    }
+
+    .carousel-caption {
+        bottom: 19%;
+    }
+
+    .caption-wrap {
+    
+        h1 {
+            //font-size: 24px;
+            font-size: 14px;
+        }
+
+        h2 {
+            //font-size: 18px;
+            font-size: 12px;
+        }
+
+        .btn-white {
+            font-size: 12px;
+            padding: 3px 5px;
+        }
+
+    }
+
+}

@@ -1,0 +1,84 @@
+@media (max-width: 991px) {
+    .arrow-right:after,
+    .arrow-left:before,
+    .arrow-right-active:after,
+    .arrow-left-active:before {
+        display: none;
+    }
+
+    .payment-steps-single {
+        margin-top: 5px;
+    }
+
+    .submenu-triangle:after {
+        display: none;
+    }
+
+    .radio-inline {
+        text-align: left;
+    }
+
+    .invest-box-input {
+        width: 92%;
+        text-align: center;
+    }
+
+    .result-number {
+        text-align: center;
+    }
+
+    .arrow {
+        text-align: center;
+        margin: 10px auto;
+        img {
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+        transform: rotate(90deg);   
+        }
+    }
+
+    .result {
+        .more-info {
+            text-align: center;
+        }
+    }
+
+    .investment-results-single {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .btn-contract {
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .last-check, .accept-terms {
+        .checkbox-inline {
+            margin-left: 5%;
+        }
+    }
+
+    .hide-responsive {
+        display: none;
+    }
+}
+
+//payment-sub-option
+
+
+@media (max-width: 768px) {
+
+    .check-auth {
+        margin-top: 20px;
+    }
+
+    .final {
+
+        h3 {
+            margin: 15px auto 5px;
+        }
+    }
+
+}

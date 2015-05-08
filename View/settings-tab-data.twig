@@ -1,0 +1,100 @@
+<div class="col-sm-2 settings-avatar">
+      <img src="http://placehold.it/150x150" class="img-circle img-responsive center-block" />
+      <a href="#" class="btn btn-link btn-edit center-block">Editar</a>
+    </div>
+    <div class="col-sm-10 settings-profile">
+       <h2>Nombre de usuario</h2>
+      <form id="social-form" class="form-wrap">
+
+        <div class="form-group with-icons">
+          <label for="email" class="pull-left">
+            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span>
+          </label>
+          <label for="email" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+          <div class="form-control-wrap">
+            <input type="email" id="email" placeholder="Email" class="form-control form-control-inline">
+          </div>
+        </div>
+
+        <div class="form-group with-icons">
+          <label for="facebook" class="pull-left">
+            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span>
+            <span class="form-control-prefix">facebook.com/</span>
+          </label>
+          <label for="facebook" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+          <div class="form-control-wrap">
+            <input type="text" id="facebook" placeholder="usuario" class="form-control form-control-inline">
+          </div>
+        </div>
+
+        <div class="form-group with-icons">
+          <label for="twitter" class="pull-left">
+            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span>
+            <span class="form-control-prefix">@</span>
+          </label>
+          <label for="twitter" class="pull-right"><span class="progress-spinner">Saving</span></label>
+          <div class="form-control-wrap">
+            <input type="text" id="twitter" name="twitter" value="" placeholder="usuario" class="form-control form-control-inline saving" disabled>
+          </div>
+        </div>
+
+        <div class="form-group with-icons">
+          <label for="linkedin" class="pull-left">
+            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span>
+          </label>
+          <label for="linkedin" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+          <div class="form-control-wrap">
+            <input type="text" id="linkedin" name="linkedin" value="" placeholder="https://es.linkedin.com/in/user" class="form-control form-control-inline">
+          </div>
+        </div>
+        
+        <div class="form-group with-icons">
+          <label for="link" class="pull-left">
+            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-link fa-stack-1x fa-inverse"></i></span>
+          </label>
+          <label for="link" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+          <div class="form-control-wrap">
+            <input type="text" id="link" name="link" value="" placeholder="http://" class="form-control form-control-inline">
+          </div>
+        </div>
+
+      </form>
+
+      <h2>Datos de inversión</h2>
+      <div class="form-wrap">
+
+        <div id="type-investor-menu">
+          <div id="individual-option">
+            <label class="radio-inline">
+                <input type="radio" name="typeOfInvestor" id="individual" value="person"> Persona física
+            </label>
+          </div>
+          <div id="enterprise-option">
+              <label class="radio-inline">
+                  <input type="radio" name="typeOfInvestor" id="enterprise" value="enterprise"> Persona jurídica
+              </label>
+              <div id="enterprise-menu">
+                  <label class="radio-inline">
+                      <input type="radio" name="typeOfEnterprise" id="profesional" value="profesional">Inversor profesional
+                  </label>
+                  <label class="radio-inline">
+                      <input type="radio" name="typeOfEnterprise" id="acreditable" value="provable">Empresa de gran activo
+                  </label>
+                  <label class="radio-inline">
+                      <input type="radio" name="typeOfEnterprise" id="others" value="other">Otras personas jurídicas
+                  </label>
+              </div>
+          </div>
+        </div>
+
+
+        {% include 'settings-individual.twig' %}
+        {% include 'settings-enterprise.twig' %}
+
+      </div>  
+
+
+
+    </div>
+
+     

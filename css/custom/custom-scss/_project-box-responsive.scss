@@ -1,0 +1,16 @@
+@media (max-width: 992px) {
+    .project-box-wrap {
+        height: 463px;
+    }
+    
+}
+
+@media  (max-width: 770px) {
+    .project-box-wrap {
+        height: auto;
+    }
+
+    .project-box-outer {
+        margin-top: 10px;
+    }
+}

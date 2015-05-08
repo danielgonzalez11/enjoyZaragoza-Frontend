@@ -1,0 +1,76 @@
+{% extends "layout.twig" %}
+
+{% block head %}
+{{ parent() }}
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<div class="title-wrap home-sep">
+	<h1>Contacto</h1>
+</div>
+<div class="container">	
+	<div class="row">	
+		<div class="col-md-7">
+			<form class="form-horizontal contactForm">
+				<div>
+					¿Tienes dudas sobre cómo funciona la Bolsa Social, tu inversión, etc? Echa un vistazo a
+					las preguntas frecuentes. Si no has encontrado tu respuesta, contáctanos a través de
+					este formulario.
+				</div>
+				<br/>	
+				<div class="form-group">
+			    	<label for="nameContact" class="col-md-4 control-label">Nombre y Apellidos</label>
+			    	<div class="col-md-8">
+			      		<input type="text" class="form-control" id="nameContact" name="nameContact" placeholder="Escribe aqui">
+			    	</div>
+			  	</div>	
+			  	<div class="form-group">
+			    	<label for="emailContact" class="col-md-4 control-label">Correo electrónico</label>
+			    	<div class="col-md-8">
+			      		<input type="email" class="form-control" id="emailContact" name="emailContact" placeholder="correo@electronico.cm">
+			    	</div>
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="phoneContact" class="col-md-4 control-label">Teléfono</label>
+			    	<div class="col-md-8">
+			      		<input type="text" class="form-control" id="phoneContact" name="phoneContact" placeholder="0034928654595">
+			    	</div>
+			  	</div>
+			  	<div class="form-group">
+			  		<label for="textareaContact" class="control-label"></label>
+			  		<div class="col-md-12">
+			  			<textarea class="form-control" id="textareaContact" name="textareaContact" rows="6" placeholder="Escriba aqui su mensaje"></textarea>
+					</div>
+			  	</div>
+			  	<div class="form-group">
+			    	<div class="col-md-12">
+			      		<div class="checkbox">
+			        		<label>
+			          			<input type="checkbox" name="conditions"> Acepto los <a href="#">Terminos y condiciones</a> de uso de este sitio web.
+			        		</label>
+			      		</div>
+			    	</div>
+			  	</div>
+			  	<div class="form-group discover-btns">
+			    	<div class="col-md-offset-2 col-md-10">
+			      		<button type="submit" name="send" class="btn btn-orange btn-orange-brown pull-right">ENVIAR >></button>
+			    	</div>
+			  	</div>
+			</form>
+		</div>
+		<div class="col-md-5">
+			<div class="contact">
+				<p>También puede contactar con nosotros en:</p>
+				<ul>
+				  <li><a href="#"><i class="fa fa-street-view"></i> c/XXX XXXXXXX</a></li>
+				  <li><a href="#"><i class="fa fa-phone"></i> Teléfono</a></li>
+				  <li><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+				  <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+				  <li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>	
+{% endblock %}

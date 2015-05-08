@@ -1,0 +1,17 @@
+#avisoCookies {
+  background: #432918;
+  color: #FFF;
+  border: 0;
+  border-radius: 0;
+  border-top: 2px solid #F39200;
+  @include box-shadow(0 0 20px 2px rgba(0,0,0,.6));
+
+  .btn {
+    margin: 10px 5px 0;
+  }
+}
+
+.loading {
+  margin: 20px 5px 10px;
+  text-align: center;
+}

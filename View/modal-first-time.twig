@@ -1,0 +1,25 @@
+<!-- Modal -->
+<div class="modal fade" id="modal-first-time" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">{{ ('modal-first-time-title')|t }}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{ ('modal-first-time-body')|t }}</p>
+        
+        <form action="#" method="POST">
+          
+          <input type="checkbox" name="checkFirstTime" id="checkFirstTime">
+          <label>{{ ('modal-first-time-conditions')|t }}</label>
+          
+        
+      </div>
+
+         <div class="modal-footer">
+          <button class="btn btn-brown" type="submit" name="aceptFirstTime" id="aceptFirstTime">{{ ('modal-first-time-button')|t }}</button>
+        </div> 
+      </form>
+    </div>
+  </div>
+</div>

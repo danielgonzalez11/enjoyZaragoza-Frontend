@@ -1,0 +1,43 @@
+.dataTables_filter{
+  .paginate_button{
+  	 margin-left: 1em; 
+  	 cursor: pointer;
+  }		
+  
+}
+
+div.dataTables_filter {
+  text-align: right;
+  display:block;
+  width: auto;
+}
+
+div.dataTables_paginate {
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.dataTables_paginate {
+  display: block;
+  width: auto;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+  margin: 0 0 1em;
+}
+
+.label:hover {
+	  display: inline;
+	  padding: .2em .6em .3em;
+	  font-size: 75%;
+	  font-weight: 700;
+	  line-height: 1;
+	  color: #fff;
+	  text-align: center;
+	  white-space: nowrap;
+	  vertical-align: baseline;
+	  border-radius: .25em;
+}
+.settings-profile span:hover{
+	opacity:1;
+}

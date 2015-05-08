@@ -1,0 +1,78 @@
+{% extends "layout.twig" %}
+
+{% block body %}
+    <div class="about-wrapper">
+        <div class="container about-investors">
+            <div class="row">
+                <div class="col-md-2">
+     {% include 'about-navigation.twig' %}               
+                </div>
+                <div class="col-md-10 about-it-works-wrap">
+                    <h2>Invierte en positivo</h2>
+                    <p>Si quieres invertir en empresas que producen un impacto positivo en la sociedad y el medio ambiente, bienvenido a la Bolsa Social. Seleccionamos para ti empresas de la economía real que tienen un modelo de negocio probado y que buscan capital paciente, no especulativo, de inversores que quieran formar parte de un proyecto empresarial positivo e ilusionante.</p>
+                    <p>La Bolsa Social es la plataforma de crowdfunding de impacto, donde ganan los inversores, las empresas y la sociedad.</p>
+
+                    <div class="see-all">
+                        <p class="see-all-btn">
+                          <a data-toggle="modal" data-target="#modal-login" class="btn btn-orange-brown">Regístrate</a>              
+                        </p>
+                    </div>
+
+                    <ul class="nav nav-pills nav-justified">
+                      <li role="presentation" class="active">
+                        <a href="#tab1" id="nav-tab1" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true" class="title-tag with-image rows-3">
+                            <img src="/img/investor-1.svg" /> <span class="tag-vcenter">Regístrate y accede a los proyectos</span>
+                        </a>
+                      </li>
+                      <li role="presentation" class="">
+                        <a href="#tab2" id="nav-tab2" role="tab" data-toggle="tab" aria-controls="tab2" class="title-tag with-image rows-3">
+                            <img src="/img/investor-7.svg" /> <span class="tag-vcenter">Selecciona e invierte</span>
+                        </a>
+                      </li>
+                      <li role="presentation" class="">
+                        <a href="#tab3" id="nav-tab3" role="tab" data-toggle="tab" aria-controls="tab3" class="title-tag with-image rows-3">
+                            <img src="/img/investor-3.svg" /> <span class="tag-vcenter">Sigue el proyecto, participa, comparte</span>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <hr class="line-border-orange" />
+                    
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane fade in active" id="tab1" aria-labelledBy="nav-tab1">
+                        <h3>Regístrate y accede a los proyectos</h3>
+                        <ul>
+                            <li><img src="/img/investor-1.svg" /> Regístrate, es <em>sencillo y gratuito</em>. Desde tu cuenta personal podrás gestionar tu cartera de inversiones</li>
+                            <li><img src="/img/investor-2.svg" /> Accede a <em>oportunidades de inversión</em> en proyectos de impacto social o medioambiental con un modelo de negocio probado y que han pasado un proceso de selección riguroso.</li>
+                            <li><img src="/img/investor-5.svg" /> Ponemos a tu disposición <em>toda la información</em> necesaria para tu decisión de inversión. En la Bolsa Social apostamos por la transparencia.</li>
+                            <li><img src="/img/investor-6.svg" /> <em>Conoce a los emprendedores</em>. Contacta con ellos y comparte tus inquietudes durante la campaña de crowdfunding en el foro de discusión para inversores registrados.</li>
+                            <li><img src="/img/investor-3.svg" /> Antes de invertir, <em>infórmate de los riesgos</em> y asesórate por expertos en caso de que tengas dudas.</li>
+                        </ul>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledBy="nav-tab2">
+                        <h3>Selecciona e invierte</h3>
+                        <ul>
+                            <li><img src="/img/investor-7.svg" /> <em>Invierte con rigor</em>. Todos los proyectos han sido analizados por Analistas Financieros Internacionales (AFI).</li>
+                            <li><img src="/img/investor-8.svg" /> <em>Invierte con seguridad</em>. Tu dinero se deposita en una cuenta en Triodos Bank durante el tiempo que dure la campaña de crowdfunding. Si la empresa no consigue reunir la cantidad solicitada, Triodos Bank te devolverá tu aportación sin gastos ni comisiones para ti.</li>
+                            <li><img src="/img/investor-9.svg" /> <em>Invierte sin comisiones</em> antes, durante o después de la inversión. La Bolsa Social no cobra a los inversores. </li>
+                            <li><img src="/img/investor-10.svg" /> <em>Aprovecha los beneficios fiscales</em>. Puedes deducirte un 20% de tu inversión en la declaración del IRPF. Es decir, por cada 1.000€ que inviertas te puedes desgravar 200 en el IRPF, hasta un máximo de 10.000 € por año.</li>
+                            <li><img src="/img/investor-11.svg" /> Invierte en varios proyectos y <em>diversifica tu cartera</em>. De este modo reducirás el riesgo de tu inversión.</li>
+                        </ul>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledBy="nav-tab3">
+                        <h3>Sigue el proyecto, participa, comparte</h3>
+                        <ul>
+                            <li><img src="/img/investor-12.svg" /> Desde tu cuenta personal podrás acceder a <em>toda la información</em> y las actualizaciones de las empresas en las que inviertas.</li>
+                            <li><img src="/img/investor-13.svg" /> Recibirás periódicamente información de la <em>evolución de la empresa</em> y su impacto social y medioambiental.</li>
+                            <li><img src="/img/investor-14.svg" /> Participa en la marcha de los proyectos como socio. Firmarás con los emprendedores un <em>pacto de socios</em> que protege a los inversores minoritarios y garantiza tus derechos.</li>
+                            <li><img src="/img/investor-15.svg" /> <em>Comparte tus proyectos</em> en las redes sociales. Además de socio, conviértete en aliado de la empresa.</li>
+                            <li><img src="/img/investor-16.svg" /> Y todo sin <em>gastos de mantenimiento</em>. La Bolsa Social no cobra a los inversores.</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                </div>  
+            </div>
+        </div>
+    </div>  
+{% endblock %}

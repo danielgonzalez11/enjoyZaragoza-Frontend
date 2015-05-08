@@ -1,0 +1,76 @@
+<!-- Modal -->
+<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Inicia sesión o crea una nueva cuenta</h4>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+        <div class="col-md-6 col-xs-6">
+          {# <h2>Inicia sesión</h2> #}
+          <label class="label-no-margin">Entra en tu cuenta.</label>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="" placeholder="Correo electrónico">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+            </div>
+            <div class="checkbox">
+            </div>
+            <button type="submit" class="btn btn-orange">Iniciar sesión</button>
+          </form>
+        </div>
+
+        <div class="col-md-6 col-xs-6" style="border-left:1px dashed #000;">
+        <label class="label-no-margin">Crea tu cuenta.
+        <a href="#" data-toggle="tooltip" data-placement="top" title="Crea tu cuenta para acceder a la información de la Bolsa Social. Es gratis y sencillo. Protegeremos la confidencialidad de la información que nos des."><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label>
+          <form>
+            {# <h2>Crea tu cuenta</h2> #}
+            <div class="form-group">
+              <input type="text" class="form-control" id="" placeholder="Nombre">
+            </div>           
+            <div class="form-group">
+              <input type="email" class="form-control" id="" placeholder="Correo electrónico">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="check-auth" value="1" required> Acepto <a href="#">Términos y Condiciones</a>
+                {# {{ language.l('agreement-register') }} <a href="/terms">{{ language.l('agreement-register-2') }}</a>{{ language.l('label-and') }} 
+                <a href="/privacy"> {{ language.l('agreement-register-3') }}{{ language.l('agreement-register-4') }}</a> #}
+              </label>
+            </div>
+            <button type="submit" class="btn btn-orange">Crear cuenta</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a href="" class="btn btn-facebook">Facebook</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a href="" class="btn btn-linkedin">LinkedIn</a>
+        <label class="label-modal-info">*Puedes agilizar el registro usando directamente tu cuenta de Facebook o LinkedIn</label>
+        </div>
+      </div>      
+
+
+
+      {# </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> #}
+
+    </div>
+  </div>
+</div>

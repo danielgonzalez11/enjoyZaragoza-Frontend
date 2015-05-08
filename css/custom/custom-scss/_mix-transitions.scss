@@ -1,0 +1,12 @@
+@mixin custom-transition($scope, $time){
+-webkit-transition: $scope $time;
+   -moz-transition: $scope $time;
+    -ms-transition: $scope $time;
+     -o-transition: $scope $time;
+        transition: $scope $time;
+
+}               
+
+
+
+ 

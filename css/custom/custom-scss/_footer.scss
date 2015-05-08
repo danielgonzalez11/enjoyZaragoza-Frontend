@@ -1,0 +1,155 @@
+footer {
+  font-family: $font-headings;
+  background-color: $footer-background-color;
+  color: #FFF;
+  min-height: $footer-height;
+  border-top: 2px solid $brand-orange;
+
+  h4 {
+    color: $brand-orange;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-bottom: 2px solid $brand-orange;
+  }
+
+  a {
+    &:hover {
+      color: $brand-orange;
+    }
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+
+    a {
+      color: #FFF;
+    }    
+  }
+
+  .form-group {
+    margin-top: 0;
+    margin-right: 20px;
+  }
+
+  .form-control {
+    margin-bottom: 5px;
+    border: 2px solid $brand-orange;
+    width: 100%;
+  }
+
+  .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0;
+  }
+
+  .social-icons {
+    margin-left: 10px;
+    word-spacing: 8px;
+
+    li {
+      display: inline-block;
+    }
+    
+    a {
+      color: $brand-orange;
+    }
+
+    .fa-stack-1x {
+      font-weight: 900;
+    }
+  }
+
+  .footer-final {
+    color: $brand-orange;
+    margin-top: 20px;
+  }
+}
+
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  footer {
+    h4 {
+      margin-right: 0;
+    }
+
+    .social-icons {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  footer {
+    h4 {
+      margin-right: 0;
+    }
+  }
+}
+/*
+
+footer {
+  font-family: $font-headings;
+  min-height: $footer-height;
+  background-color: $footer-background-color;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid $brand-orange;
+
+  .logo {
+    margin-top: 20px;
+    max-width: 110px;
+  
+  }
+
+  ul {
+    margin-top: 20px;
+
+    li {
+      list-style: none;
+      text-transform: uppercase;
+      line-height: 160%;
+      font-size: $footer-font-size;
+      color: $footer-font-color;
+
+      a {
+        color: $footer-font-color;
+      }
+    }
+  }
+
+  .termsNewsletter {
+    margin-right: 5px;
+  }
+
+  .social-icons {
+    margin-left: -30px;
+  }
+
+  .social-icons li {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .footer-final {
+    margin-top: 20px;
+  }
+
+  .footer-final p {
+    float: left;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+  .footer-final a {
+    float: left;
+    margin-bottom: 20px;
+  }
+}
+*/

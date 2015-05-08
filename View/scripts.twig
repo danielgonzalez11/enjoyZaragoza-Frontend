@@ -1,0 +1,36 @@
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/localization/messages_es.min.js"></script>
+<script>
+//<![CDATA[
+  window.currencySymbol = "€";
+  window.locale = "es";
+  
+  $.validator.setDefaults({
+    highlight: function(e) {
+      $(e).closest('.form-group, .checkbox, .radio').addClass('has-error');
+    },
+    unhighlight: function(e) {
+      $(e).closest('.form-group, .checkbox, .radio').removeClass('has-error');
+    },
+    errorElement: 'span',
+    errorClass: 'help-block',
+    errorPlacement: function(error, e) {
+      if (e.parent('.input-group').length || e.prop('type') === 'checkbox' || e.prop('type') === 'radio') {
+        error.insertAfter(e.parent());
+      } else {
+        error.insertAfter(e);
+      }
+    }
+  });
+//]]>
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script> 

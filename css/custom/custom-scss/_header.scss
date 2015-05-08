@@ -1,0 +1,137 @@
+header {
+    height: $header-height;
+    .container {
+        height: ($header-height);
+    }
+
+    .dropdown-menu-right {
+        //right: 17%;
+        top: 78px;
+    }
+}
+
+// Logo
+.logo {
+    width: 180px;
+    @include custom-transition(all, $general-hover-time);
+    &:hover {
+        opacity: $header-hover-opacity !important;
+    }
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+// Header buttons
+
+.btn-header {
+    // font-family: 'Raleway';
+    font-size: $header-font-size;
+    font-weight: $header-font-weight;
+    padding-top: 8px !important;
+    padding-bottom: 5px !important;
+    border-radius: $header-btn-border-radius;
+    margin-top: 32px;
+    height: auto;
+    text-transform: uppercase;
+    white-space: normal;
+    width: 138px;
+    margin-left: 30px;
+    text-align: center;
+    @include custom-transition(all, $general-hover-time);
+    
+    &:hover {
+        opacity: $header-hover-opacity !important;
+    }
+}
+
+.header-li {
+
+    height: auto;
+}
+
+.navbar-default {
+    height: $header-height;
+    background-color: $header-background-color;
+    border: none;
+}
+
+.navbar-nav {
+    height: $header-height;
+}
+
+// Header links
+
+.header-links {
+    // font-family: $font-headings;
+    font-size: $header-font-size;
+    font-weight: $header-font-weight;
+    color: $brand-brown !important;
+    margin-top: 50px !important;
+    padding: 0 !important;
+    text-transform: uppercase;
+    margin-left: 24px;
+    @include custom-transition(all, $general-hover-time);
+    &:hover {
+        opacity: $header-hover-opacity;
+        cursor: pointer;
+    }
+    
+}
+
+// Language selector
+
+
+
+.btn-lang {
+    border-radius: 30px;
+    font-weight: 900;
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color: white;
+}
+
+// header sep
+.home-sep {
+    width: 100%;
+    border-bottom: $header-border-bottom-px solid $header-border-bottom-color;
+}
+
+.title-wrap {
+    font-family: $font-headings;
+    height: $default-title-height;
+    color: $brand-orange;
+    background-color: $default-title-bg;
+    width: 100%;
+    text-align: center;
+    
+    &.title-inverse {
+        color: #FFF;
+        background-color: $brand-brown;
+    }
+
+    h1 {
+        color: inherit;
+        margin:0;
+        font-weight: 900;
+        font-size: 24px;
+        padding-top: 10px;
+    }
+}
+
+
+.fix-button-header {
+    width: auto;
+    margin-top:40px;
+    margin-left:10px;
+}
+
+.fix-second-button-header {
+    padding-left: 20px !important;
+    margin-left: 20px;
+}

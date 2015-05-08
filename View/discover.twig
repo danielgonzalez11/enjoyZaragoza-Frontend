@@ -1,0 +1,88 @@
+{% extends "layout.twig" %}
+
+{% block body %}
+
+{# {% include 'home-slider.twig' %} #}
+<section id="discover-main-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Descubre proyectos punteros</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A hic minima consequatur laboriosam. Necessitatibus dignissimos amet.</h2>
+            </div>
+            <div class="col-md-12">
+                <div class="discover-btns clearfix">
+                    <div class="col-md-2 col-md-offset-1 padding-fixing">
+                        <button class="btn btn-orange">Destacados</button>    
+                    </div>
+                    <div class="col-md-3 padding-fixing">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-orange dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            Por categorías <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            {# <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li> #}
+                          </ul>
+                        </div>
+                    </div>                    
+                    <div class="col-md-3 padding-fixing">
+                        <button class="btn btn-orange">A punto de finalizar</button>
+                    </div>
+                    <div class="col-md-2 padding-fixing">
+                        <button class="btn btn-orange">Novedades</button>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="discover-results">
+    <h2>Nombre de la selección elegida arriba</h2>
+</section>
+
+    <div class="container">
+        <div class="home-campaigns-wrap">
+            <div class="row">
+                <div class="col-md-12">
+             
+                {% include 'project-box.twig' %}
+                {% include 'project-box.twig' %}
+                {% include 'project-box.twig' %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="discover-pagination">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>                
+        </div>
+    </div>
+</div>
+
+      
+{% endblock %}

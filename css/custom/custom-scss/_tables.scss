@@ -1,0 +1,31 @@
+.sorting_asc:after, .sorting_desc:after {
+  font:normal normal normal 14px/1 FontAwesome;
+  display:inline-block;
+  margin-left:3px;
+}
+.sorting_asc:after {
+  content: "\f107";
+}
+.sorting_desc:after {
+  content: "\f106";
+}
+.dataTables_length, .dataTables_filter {
+  display:inline-block;
+  width:50%;
+  margin-top:1em;
+  box-sizing: border-box;
+}
+.dataTables_info, .dataTables_paginate {
+  display:inline-block;
+  width:50%;
+  padding:0 0.5em;
+  box-sizing: border-box;
+  margin: 0 0 1em;
+}
+.dataTables_filter, .dataTables_paginate {
+  text-align:right;
+}
+.dataTables_filter input, .paginate_button {
+  margin-left: 1em;
+  cursor: pointer;
+}

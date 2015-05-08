@@ -1,0 +1,161 @@
+{% extends "layout.twig" %}
+
+{% block body %}
+    {# title #}
+    <div class="title-wrap">
+        <h1>Asistente de inversión</h1>
+    </div>
+    {# arrows #}
+    <div class="container">
+        <div class="row">
+            <div class="payment-steps">
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-right">
+                        1) Indentificación
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left arrow-right">
+                        2) Riesgos
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left arrow-right-active active">
+                        3) Inversión
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left">
+                        4) Confirmación y pago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# next and previous buttons #}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="payment-nav-wrapper">
+                    <span class="pull-right payment-nav">
+                        <a href="#">Siguiente ></a>
+                    </span>
+                    <span class="pull-left payment-nav">
+                        <a href="#">< Anterior</a>
+                    </span>
+                    <h2>Paso 3/4</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# big title #}
+    <div class="container">
+        <div class="row">
+            <div class="payment-steps-description">
+                <div class="col-md-12"> 
+                    <h3>Detalle de inversión</h3>
+                    <h4>¿Qué cantidad desea invertir?</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="calculator">
+                <div class="col-md-3 col-md-offset-2">            
+                    <div class="invest-box">
+                        <input type="text" id="" name="" placeholder="1.000" class="invest-box-input" maxlength="7"><span>€</span>     
+                    </div>
+                </div>
+
+                <div class="col-md-1">
+                    <div class="arrow">
+                        <img src="../img/flecha.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="result">
+                        <span class="result-number">
+                            1.300,06 €
+                        </span>
+                        <span class="more-info">
+                            <a href="">¿Qué es esto?</a>
+                        </span>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="investment-results clearfix">
+                <div class="col-md-3">
+                    <div class="investment-results-single">
+                        <div class="investment-results-title">Estimación de retorno</div>
+                        <hr>
+                        <div class="investment-results-number">1475,45€</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="investment-results-single">
+                        <div class="investment-results-title">Nº de participaciones</div>
+                        <hr>
+                        <div class="investment-results-number">13</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="investment-results-single">
+                        <div class="investment-results-title">Valor por participación</div>
+                        <hr>
+                        <div class="investment-results-number">165€</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="investment-results-single">
+                        <div class="investment-results-title">Porcentaje del proyecto</div>
+                        <hr>
+                        <div class="investment-results-number">0,33%</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>    
+
+    <div class="container">
+        <div class="row">
+            <div class="agree-terms-wrap clearfix">
+                <div class="col-md-4">
+                    <div class="contract-preview">
+                        <a class="btn btn-contract"><img src="../img/contract_preview.svg" alt="">Previsualizar contrato</a>
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="accept-terms">         
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="agree-terms" id="agree1" value="agree1"> He leído el contrato y acepto las condiciones.
+                        </label>
+                         <label class="checkbox-inline">
+                            <input type="checkbox" name="agree-terms2" id="agree2" value="agree2">Confirmo que no excedo el límite de inversión de 10.000€ en otras plataformas en los últimos 12 meses.
+                        </label>
+                    </div>       
+                </div>
+                <div class="col-md-4">
+                    <div class="last-check">
+                         <label class="checkbox-inline">
+                            <input type="checkbox" name="agree-terms3" id="agree3" value="agree3">Delego en Bolsa Social SL las realización de las gestiones.
+                        </label> 
+                        <button class="btn btn-orange btn-invest">Invertir</button>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="{{ qv.js }}/app.js"></script>
+{% endblock %}
+
+
+    
+

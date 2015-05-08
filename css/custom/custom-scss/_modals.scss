@@ -1,0 +1,59 @@
+.modal {
+    font-weight: 900;
+
+    .modal-title, label, .btn {
+        font-weight: 900;
+    }
+
+
+    h2 {
+        font-weight: 900;
+        color: $brand-brown;
+    }
+    .btn {
+        // text-transform: uppercase;
+    }
+
+    .label-no-margin{
+        margin:0px;
+    }
+
+    .label-modal-info{
+        font-size:12px;
+        margin-top:2px;
+        margin-bottom:0px;
+        text-align:justify;
+    }
+
+    .btn-facebook{
+        width: 80%;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+
+    .btn-linkedin {
+        width: 80%;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .checkbox>label{
+        text-align:left;
+    }
+}
+
+.modal-ajax {
+    .modal-content {
+        min-height: 200px;
+        position: relative;
+    }
+    .modal-loading {
+        position:absolute;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .modal-error {
+        padding-top: 50px;
+    }
+}

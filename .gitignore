@@ -1,0 +1,9 @@
+.DS_STORE
+.sass-cache
+vendor/
+composer.lock
+config.codekit
+css/bootstrap.css.map
+css/bolsasocial.css.map
+css/bootstrap.css
+css/bolsasocial.css

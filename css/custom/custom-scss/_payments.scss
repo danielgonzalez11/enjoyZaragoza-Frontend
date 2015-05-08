@@ -1,0 +1,606 @@
+// Payment steps
+
+.reduce-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.payment-steps {
+    font-family: $font-headings;
+    text-transform: uppercase;
+    // font-weight: bold;
+    margin-top: 10px;
+}
+
+.payment-steps-single {
+    background-color: $payment-steps-bg;
+    color: $payment-steps-color;
+    text-align: center;
+    padding: 6px 0;
+    font-size: $payment-steps-font-size;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.active {
+    background-color: $brand-orange;
+    color: $brand-white;
+}
+
+.arrow-left:before {
+
+    content:"";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    left: 5px;
+    top: 0;
+    border-bottom: 16px solid transparent;  /* left arrow slant */
+    border-top: 16px solid transparent; /* right arrow slant */
+    border-left: 16px solid $brand-white; /* bottom, add background color here */
+    font-size: 0;
+    line-height: 0;
+
+}
+
+.arrow-left-active:before {
+
+    content:"";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    left: 5px;
+    top: 0;
+    border-bottom: 16px solid transparent;  /* left arrow slant */
+    border-top: 16px solid transparent; /* right arrow slant */
+    border-left: 16px solid $brand-orange; /* bottom, add background color here */
+    font-size: 0;
+    line-height: 0;
+
+}
+
+.arrow-right:after {
+
+    content:"";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    right: -11px;
+    top: 0;
+    border-bottom: 16px solid transparent;  /* left arrow slant */
+    border-top: 16px solid transparent; /* right arrow slant */
+    border-left: 16px solid $payment-steps-bg; /* bottom, add background color here */
+    font-size: 0;
+    line-height: 0;
+    z-index: 999;
+
+}
+
+.arrow-right-active:after {
+
+    content:"";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    right: -11px;
+    top: 0;
+    border-bottom: 16px solid transparent;  /* left arrow slant */
+    border-top: 16px solid transparent; /* right arrow slant */
+    border-left: 16px solid $brand-orange; /* bottom, add background color here */
+    font-size: 0;
+    line-height: 0;
+    z-index: 999;
+
+}
+
+.payment-nav-wrapper {
+    margin-top: 20px;
+    h2 {
+        margin:0;
+        text-align: center;
+        font-weight: 900;
+        color: $brand-orange;
+        font-size: 24px;
+    }
+}
+.payment-nav {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    &:hover {
+        color: $brand-orange; 
+    }
+    width: 75px;
+    height: 15px;
+}
+
+.payment-steps-description {
+    h3, h4 {
+        color: $brand-brown;
+        text-align: center;
+        font-weight: 900;
+        margin: 5px auto;
+    }
+
+    .receipt-invest{
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+label {
+    color: $brand-brown;
+    text-align: right;
+}
+
+.no-padding {
+    padding-left: 0;
+}
+
+.payment-enterprise {
+    margin-top: 8px;
+    padding-top: 10px;
+    border-top: 2px dashed #DADADA;
+}
+
+.individual-form {
+    margin-bottom: 20px;
+    button {
+        font-family: $font-text;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: $brand-brown !important;
+        font-size: 16px;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        margin: 30px auto;
+    }
+}
+
+.check-auth {
+    text-align: left;
+    display: inline !important;
+    padding-left: 10px;
+}
+
+.payment-sub-option {
+    overflow: hidden;
+    min-height: 120px;
+    background-color: #eee;
+    margin: 20px auto;
+    padding: 18px 5px;
+    h3 {
+        text-align: center;
+        font-weight: 900;
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    h4{
+        text-align: center;
+        font-weight: 900;
+        margin-top: 0;
+        font-size: 18px;
+    }
+}
+
+.payment-tag {
+    background-color: #F39200;
+    color: white;
+    padding: 3px 10px;
+    margin-left: 10px;
+    &:hover {
+        color: white;
+    }
+}
+
+.payment-step2-wrapper {
+    h3 {
+        font-size: 24px;
+    }
+    img {
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+input[type="radio"].submenu-triangle:after {
+    content:"";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    right: -1px;
+    top: 13px;
+    border-bottom: 16px solid transparent;  /* left arrow slant */
+    border-top: 16px solid transparent; /* right arrow slant */
+    border-left: 16px solid #eee; /* bottom, add background color here */
+    font-size: 0;
+    line-height: 0;
+    z-index: 999;
+
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+
+}
+
+.enterprise-disclaimer {
+    margin: 20px auto;
+}
+
+
+// Step 2
+
+.agree-risks {
+    color: $brand-orange;
+    display: inline;
+    text-align: left;
+}
+
+.btn-next {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $brand-brown !important;
+    font-size: 18px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin: 30px auto;
+}
+
+///////////////////// Step 3
+
+
+.invest-box {
+    font-size: 30px;
+    font-weight: 900;
+    span {
+        margin-left: 5px;
+        &:hover {
+            color: $brand-orange;
+        }
+    }   
+}
+
+.invest-box-input {
+    border: none;
+    background-color: $brand-orange;
+    color: white;
+    width: 85%;
+    text-align: right;
+    padding-right: 10px;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color: white;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: white;
+        opacity: 1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: white;
+        opacity: 1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: white;
+    }
+
+
+}
+
+.arrow {
+    padding-top: 6px;
+}
+
+.result {
+
+    .result-number {
+        font-family: $font-text;
+        font-size: 30px;
+        font-weight: 900;
+        color: $brand-brown;
+        display: block;
+    }
+
+    .more-info {
+        display: block;
+        text-align: right;
+        font-style: italic;
+        font-size: 16px;
+        margin-top: -10px;
+        a {
+            color: #999999;
+        }
+    }
+}
+
+.investment-results {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .investment-results-title {
+        font-style: italic;
+        font-size: 14px;
+        font-weight: bold;
+        color: $brand-brown;
+        text-align: center;
+    }
+
+    hr {
+        height: 2px;
+        color: #DDDDDD;
+        width: 90%;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+
+    .investment-results-number {
+        font-size: 25px;
+        display: block;
+        text-align: center;
+        font-weight: 900;
+        color: $brand-brown;
+    }
+}
+
+.agree-terms-wrap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .contract-preview {
+        img {
+            padding-right: 5px;
+        }
+    } 
+
+    label {
+        text-align: left;
+        color: $brand-orange;
+    }  
+
+    .checkbox-inline {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .btn-invest {
+        width: 90%;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        color: $brand-brown !important;
+        border-radius: 0;
+        font-weight: 900;
+        font-size: 24px;
+        margin: 0 auto 20px auto;
+
+    }
+}
+
+
+// Step 4
+
+.payment-big-title {
+    font-size: 20px;
+    font-weight: 900;
+    color: #888;
+    font-family: $font-headings;
+    text-align: right !important;
+    background-color: #ededed;
+    padding-right: 8px;
+    padding-top: 8px;
+    line-height: 120%;
+}
+
+.payment-single-title {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+    display: block;
+
+    &:hover {
+        color: $brand-orange;
+    }    
+}
+
+.payment-main-wrap {
+    margin-top: 30px;
+}
+
+.payment-single-description {
+    font-family: $font-text;
+    font-weight: 900;
+    font-size: 14px;
+    color: #666;
+}
+
+.payment-single-number {
+    font-weight: 900;
+    color: #636363;
+    font-size: 14px;
+    padding-top: 6px;
+    display:inline-block;
+}
+
+.payment-single-wrap {
+    margin-top: 8px;
+}
+
+.db-helper {
+    display: block;
+}
+
+.padding-fixed {
+    padding-top: 6px;
+}
+
+.payment-single-disclaimer {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+
+    img {
+        margin-right: 4px;
+    }
+}
+
+
+.payment-buttons-wrapper {
+    min-height: 130px;
+    background-color: #eee;
+    width: 100%;
+    margin: 20px auto;
+
+    h4 {
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        font-family: $font-headings;
+        padding-top: 20px;
+    }
+
+    .payment-buttons {
+        display: block;
+        text-align: center;
+        margin-top: 18px;
+    }
+
+    .btn-orange {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 900;
+        padding: 10px 14px;
+        color: $brand-brown !important;
+        margin-left: 8px;
+        width: 300px;
+        margin-bottom: 8px;
+
+        img {
+            padding-left: 5px;
+        }
+    }
+
+}
+
+.payment-success {
+    height: auto;
+    background-color: $brand-orange;
+    h2 {
+        font-size: 28px;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 900;
+        text-align: center;
+        line-height: 120%;
+        color: white;
+        padding-bottom: 20px;
+    }
+}
+
+
+.payment-transaction {
+    font-family: $font-headings;
+    height: $payment-title-height;
+    background-color: $payment-title-bg;
+    width: 100%;
+    text-align: center;
+    background-color: #eee;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+
+    p {
+        padding-top: 5px;
+        margin-bottom: 3px;
+    }
+}
+
+
+.final {
+    border-bottom: 2px solid $brand-orange;
+    width: 100%;
+
+    h3 {
+        margin: 15px auto -15px;
+    }
+
+    span {
+        display: block;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        font-weight: 900;
+    }
+
+    .btn-orange {
+        padding: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+.payment-last {
+    margin-bottom: 20px;
+}
+
+
+// printed version
+
+@media print {
+    header, footer {
+        display: none;
+    }
+    .title-wrap {
+        display: none;
+    }
+
+    .final {
+        .btn-orange {
+            display: none;
+        }
+    }
+
+    .payment-transaction {
+        padding-bottom: 0;
+        h2 {
+            font-size: 14px;
+        }
+    }
+
+    .payment-single-disclaimer {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+

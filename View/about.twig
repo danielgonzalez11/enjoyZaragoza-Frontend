@@ -1,0 +1,68 @@
+{% extends "layout.twig" %}
+
+{% block body %}
+    <div class="about-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+     {% include 'about-navigation.twig' %}               
+                </div>
+                <div class="col-md-10">
+                    <div class="about-tabs-wrapper">
+                        <div role="tabpanel">
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="no-bg about-title-main"><a href="#main" aria-controls="main" role="tab" data-toggle="tab"><h2>Quiénes somos</h2></a></li>
+
+                            <li role="presentation" class="pull-right about-title-element"><a href="#partners" aria-controls="partners" role="tab" data-toggle="tab">Partners</a>
+                            </li>
+ 
+                            <li role="presentation" class="pull-right about-title-element"><a href="#advisors" aria-controls="advisors" role="tab" data-toggle="tab">Consejo asesor</a></li>
+
+                           <li role="presentation" class="pull-right about-title-element"><a href="#team" aria-controls="team" role="tab" data-toggle="tab">Equipo</a></li>                            
+                          </ul>
+
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="main">
+                                <div class="about-tab-main-heading">
+                                    1. Misión y valores
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ut atque officia incidunt laudantium impedit unde aspernatur placeat veritatis doloribus commodi, eligendi fuga, optio mollitia totam ratione aliquid libero quos!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ut atque officia incidunt laudantium impedit unde aspernatur placeat veritatis doloribus commodi, eligendi fuga, optio mollitia totam ratione aliquid libero quos!</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="team">
+                                <div class="about-tab-main-heading">
+                                    2. Equipo
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ut atque officia incidunt laudantium impedit unde aspernatur placeat veritatis doloribus commodi, eligendi fuga, optio mollitia totam ratione aliquid libero quos!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ut atque officia incidunt laudantium impedit unde aspernatur placeat veritatis doloribus commodi, eligendi fuga, optio mollitia totam ratione aliquid libero quos!</p>
+                                {# <hr> #}
+                                {# <div class="about-team-member">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="http://placehold.it/120x120" alt="" class="img-responsive">
+                                        </div>
+                                        
+                                    </div>  
+                                </div> #}
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="advisors">Advisors</div>
+                            <div role="tabpanel" class="tab-pane" id="partners">Partners</div>
+                          </div>
+                        </div>   
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+
+
+      
+{% endblock %}

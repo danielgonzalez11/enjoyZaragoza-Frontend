@@ -1,0 +1,257 @@
+{% extends "layout.twig" %}
+
+{% block body %}
+
+{# block to remove in final thanks #}
+    {# title #}
+    <div class="title-wrap">
+        <h1>Asistente de inversión</h1>
+    </div>
+    {# arrows #}
+    <div class="container">
+        <div class="row">
+            <div class="payment-steps">
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-right">
+                        1) Indentificación
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left arrow-right">
+                        2) Riesgos
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left arrow-right">
+                        3) Inversión
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left active">
+                        4) Confirmación y pago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# next and previous buttons #}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="payment-nav-wrapper">
+                    <span class="pull-right payment-nav">
+                        {# <a href="#">Siguiente ></a> #}
+                    </span>
+                    <span class="pull-left payment-nav">
+                        <a href="#">< Anterior</a>
+                    </span>
+                    <h2>Paso 4/4</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {# big title #}
+    <div class="container">
+        <div class="row">
+            <div class="payment-steps-description">
+                <div class="col-md-12"> 
+                    <h3>Confirmación y pago</h3>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+{# / block to remove in final thanks #}
+
+    <div class="container">
+        <div class="payment-main-wrap">
+            <div class="row">
+                <div class="col-md-3 hide-responsive">
+                    <div class="payment-big-title" id="title1">Datos del inversor</div>
+                </div>
+
+                <div class="col-md-9" id="block1">
+                    <div class="payment-single-wrap clearfix">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="payment-single-title">Persona jurídica</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="payment-single-wrap clearfix clearfix">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="payment-single-title">Razón Social:</span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="payment-single-description">Aquí va la razón social</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="payment-single-wrap clearfix">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="payment-single-title">CIF:</span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="payment-single-description">G12312312</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="row">
+                        <div class="payment-single-wrap clearfix">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="payment-single-title">Tipo de empresa:</span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="payment-single-description">Banca de inversión</span>
+                            </div>
+                        </div>
+                    </div>
+     
+
+                    <div class="row">
+                        <div class="payment-single-wrap clearfix">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="payment-single-title">Representada por:</span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="payment-single-description db-helper">Nombre apellido1 apellido2</span>
+                                <span class="payment-single-description db-helper">Cargo</span>
+                                <span class="payment-single-description db-helper">Nacionalidad</span>
+                            </div>
+                        </div>
+                    </div>               
+
+
+                    <div class="row">
+                        <div class="payment-single-wrap clearfix">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="payment-single-title">Teléfono:</span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="payment-single-description">901 123 123</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="payment-single-wrap clearfix">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="payment-single-title">Dirección:</span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="payment-single-description db-helper">Nombre de la calle, número</span>
+                                <span class="payment-single-description db-helper">35010, Las Palmas</span>
+                                <span class="payment-single-description db-helper">Provincia, País</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>  
+
+    </div>
+
+    <div class="container">
+        <div class="payment-main-wrap">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3 hide-responsive">
+                    <div class="payment-big-title" id="title2">Datos de la inversión</div>
+                </div>
+
+                <div class="col-md-9" id="block2">
+
+                    <div class="row">
+                        <div class="payment-single-wrap clearfix">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="payment-single-title padding-fixed">Cantidad a invertir:</span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="payment-single-number">10.330,06€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="payment-single-wrap clearfix">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="payment-single-title padding-fixed">Nº de participaciones:</span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="payment-single-number">4</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="row">
+                        <div class="payment-single-wrap clearfix">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="payment-single-title padding-fixed">Porcentaje del proyecto:</span>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <span class="payment-single-number">0,25%</span>
+                            </div>
+                        </div>
+                    </div>
+     
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="payment-main-wrap">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3 hide-responsive">
+                    <div class="payment-big-title" id="title3">Confirmaciones declaradas</div>
+                </div>
+
+                <div class="col-md-9" id="block3">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="payment-single-disclaimer db-helper"><img src="../img/ok_mark.svg" alt="">Ha acreditado tener capacidad legal suficiente para comprotemer la inversión en nombre de la entidad.</span>
+
+                            <span class="payment-single-disclaimer db-helper"><img src="../img/ok_mark.svg" alt="">Ha acreditado tener capacidad legal suficiente para comprotemer la inversión en nombre de la entidad.</span>
+
+                            <span class="payment-single-disclaimer db-helper"><img src="../img/ok_mark.svg" alt="">Ha acreditado tener capacidad legal suficiente para comprotemer la inversión en nombre de la entidad.</span>
+
+                            <span class="payment-single-disclaimer db-helper"><img src="../img/ok_mark.svg" alt="">Ha acreditado tener capacidad legal suficiente para comprotemer la inversión en nombre de la entidad.</span>
+
+                            <span class="payment-single-disclaimer db-helper"><img src="../img/ok_mark.svg" alt="">Ha acreditado tener capacidad legal suficiente para comprotemer la inversión en nombre de la entidad.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="payment-buttons-wrapper">
+                    <h4>Seleccione el método de pago que desea utilizar:</h4>
+                    <div class="payment-buttons">
+                        <a href="#" class="btn btn-orange">Transferencia bancaria</a>
+                        <a href="#" class="btn btn-orange">Cargo en tarjeta <img src="../img/candado.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
+
+{% block scripts %}
+    {{ parent() }}
+<script src="js/payment-style.js"></script>
+{% endblock %}

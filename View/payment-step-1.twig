@@ -1,0 +1,158 @@
+{% extends "layout.twig" %}
+
+{% block body %}
+    {# title #}
+    <div class="title-wrap">
+        <h1>Asistente de inversión</h1>
+    </div>
+    {# arrows #}
+    <div class="container">
+        <div class="row">
+            <div class="payment-steps">
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-right-active active">
+                        1) Indentificación
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left arrow-right">
+                        2) Riesgos
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left arrow-right">
+                        3) Inversión
+                    </div>
+                </div>
+                <div class="col-md-3 reduce-padding">
+                    <div class="payment-steps-single arrow-left">
+                        4) Confirmación y pago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# next and previous buttons #}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="payment-nav-wrapper">
+                    <span class="pull-right payment-nav">
+                        <a href="#">Siguiente ></a>
+                    </span>
+                    <span class="pull-left payment-nav">
+                        {# <a href="#">< Anterior</a> #}
+                    </span>
+                    <h2>Paso 1/4</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# big title #}
+    <div class="container">
+        <div class="row">
+            <div class="payment-steps-description">
+                <div class="col-md-12"> 
+                    <h3>Identificación del inversor</h3>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita autem eius sequi non ipsa iusto, magni maiores asperiores perspiciatis tempora neque error, sit, repellendus doloribus tenetur distinctio nostrum! Quas, natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium unde adipisci earum repellendus. Dignissimos hic est ex consectetur, repudiandae sit obcaecati culpa ea commodi blanditiis labore saepe quidem quisquam quasi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# form #}
+    <div class="container">
+        <div class="row">
+            <div class="payment-form">
+                
+                <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-6">
+                    <label class="radio-inline">
+                        <input type="radio" name="typeOfInvestor" id="individual" value="individual" checked> Persona física
+                    </label>
+                </div>
+                <div class="col-md-9 col-sm-6 col-xs-6">
+                    <label class="radio-inline">
+                        <input type="radio" name="typeOfInvestor" id="enterprise" value="enterprise"> Persona jurídica
+                    </label> 
+{# type of enterprise block #}
+                    <div id="enterprise-menu" class="">
+                        <div class="payment-enterprise">
+                            <div class="col-md-4 no-padding">
+                                <label class="radio-inline">
+                                    <input type="radio" name="typeOfEnterprise" id="profesional" value="profesional" checked> Profesional
+                                </label>
+                            </div>
+
+                            <div class="col-md-4 no-padding">
+                                <label class="radio-inline">
+                                    <input type="radio" name="typeOfEnterprise" id="acreditable" value="acreditable" class=""> Empresa acreditable
+                                </label>
+                            </div> 
+
+                            <div class="col-md-4 no-padding">
+                                <label class="radio-inline">
+                                    <input type="radio" name="typeOfEnterprise" id="others" value="others"> Otras personas jurídicas
+                                </label>
+                            </div> 
+                        </div>
+                    </div>
+{# end type of enterprise block #}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{# type of enterprise block #}
+
+    <div class="container" id="enterprise-provable-menu">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="payment-sub-option">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                       
+                        <input type="checkbox" name="check-1" id="check-1" value="" class="checkbox-inline" tabindex="6">
+                      
+                        <label for="check-1" class="check-auth">
+                            Por la presente acredito tener capacidad legal suficiente para comprometer la inversión a nombre de la empresa que represento.
+                        </label> 
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+
+                        <input type="checkbox" name="check-2" id="check-2" value="" class="checkbox-inline" tabindex="6">
+                      
+                        <label for="check-2" class="check-auth">
+                            Por la presente acredito tener capacidad legal suficiente para comprometer la inversión a nombre de la empresa que represento.
+                        </label>                       
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        
+                        <input type="checkbox" name="check-3" id="check-3" value="" class="checkbox-inline" tabindex="6">
+                      
+                        <label for="check-3" class="check-auth">
+                            Por la presente acredito tener capacidad legal suficiente para comprometer la inversión a nombre de la empresa que represento.
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% include 'payment-form-individual.twig' %}
+{% include 'payment-form-enterprise.twig' %}
+
+
+
+{% endblock %}
+
+{% block scripts %}
+    {{ parent() }}
+<script src="js/app.js"></script>
+<script>
+investor_form();
+</script>
+{% endblock %}

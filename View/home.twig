@@ -1,0 +1,45 @@
+{% extends "layout.twig" %}
+
+{% block body %}
+
+{% include 'home-slider.twig' %}
+
+    <div class="container">
+        <div class="row">
+            <div class="home-campaigns-wrap clearfix">
+                <div class="col-md-12">
+             
+                {% include 'project-box.twig' %}
+                {% include 'project-box.twig' %}
+                {% include 'project-box.twig' %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="see-all">
+        <div class="see-all-btn">
+            <a href="#" class="btn btn-brown">¿Quieres conocer más proyectos sociales?</a>
+        </div>  
+    </div>
+
+    <section id="home-about-bs">
+        <div class="home-about-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>¿Qué es la Bolsa Social?</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis ipsam itaque consectetur reiciendis, debitis! Necessitatibus, quo esse sunt ipsa, eligendi adipisci, ea saepe est soluta accusamus quaerat asperiores omnis!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis modi explicabo suscipit unde nemo veritatis, amet fugiat dolores odio nobis reprehenderit neque, alias consequatur. Laboriosam, debitis temporibus omnis exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+         
+   
+      
+{% endblock %}

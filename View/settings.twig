@@ -1,0 +1,59 @@
+{% extends "layout.twig" %}
+
+{% block head %}
+{{ parent() }}
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+<div class="title-wrap title-inverse home-sep">
+  <h1>Configuración > Perfil de usuario</h1>
+</div>
+
+<div class="container"> 
+  <div class="row">
+    <div class="col-sm-12">
+        <div class="settings-tabs-wrap">
+            <div role="tabpanel" id="myTab">
+
+              <!-- Nav tabs -->
+                <ul class="nav nav-tabs has-disabled" role="tablist">
+                    <li role="presentation" class="active"><a href="#Mydata" aria-controls="Mydata" role="tab" data-toggle="tab">Mis datos</a></li>
+                    <li role="presentation" class="disabled"><a href="#" aria-controls="Myportfolio" role="tab" data-toggle="tab" >Mi cartera</a></li>
+                    <li role="presentation" class="disabled"><a href="#" aria-controls="Myprojects" role="tab" data-toggle="tab" >Mis proyectos</a></li>
+                </ul>
+
+              <!-- Tab panes -->
+                <div class="tab-content clearfix">
+                    <div role="tabpanel" class="tab-pane active" id="Mydata">
+                          {% include 'settings-tab-data.twig' %}   
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="Myportfolio">
+                          {% include 'settings-tab-portfolio.twig' %}
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="Myprojects">
+                          {% include 'settings-tab-projects.twig' %}     
+                    </div>
+              </div>
+          </div>
+      </div>  
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    {{ parent() }}
+<script src="js/app.js"></script>
+<script>
+  user_settings({
+    strings: {
+      cancel: 'Cancel',
+      saving: 'Saving',
+      error404: 'Ha ocurrido un error, por favor, recarga la página o vuelve a intentarlo más tarde'
+    }
+  });
+</script>
+{% endblock %}

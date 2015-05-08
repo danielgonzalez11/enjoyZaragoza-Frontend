@@ -1,0 +1,33 @@
+@media (max-width: 990px) {
+    .project-header {
+        h1 {
+            font-size: 30px;
+        }
+        .project-description {
+            font-size: 16px;
+        }
+    }
+
+    .embed-responsive {
+        margin-top: 20px;
+    }
+
+    .project-numbers {
+        margin-bottom: 10px;
+    }
+
+    .social-container-wrap {
+        text-align: center;
+        display: block;
+        width: 90%;
+    }
+
+    .social-container-wrap::before{
+        border-bottom: 7px solid #fff;
+        border-bottom-color: #fff;
+    }
+
+    .social-container {
+        display: inline-block;
+    }
+}

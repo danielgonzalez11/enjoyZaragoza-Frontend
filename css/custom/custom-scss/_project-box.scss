@@ -1,0 +1,195 @@
+.home-campaigns-wrap {
+    margin-bottom: 20px;
+}
+
+.project-box-outer {
+    margin-top: 30px;
+    .padding-fixed {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+.project-box-wrap {
+    @include custom-transition(all, $general-hover-time); 
+    border: 1px solid #eee;
+    padding: 10px;
+    background-color: white;
+    height: 473px;
+    .project-box-title {
+        height: 50px;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 900;
+        text-align: left;
+        line-height: 120%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        a {
+          color: $brand-brown;  
+        }
+        
+    }
+
+    .project-box-img {
+
+    }
+
+    .project-sep {
+        height: 4px;
+        width: 100%;
+        background-color: $brand-orange;
+        border: none;
+        margin: 5px auto;
+    }
+
+    .project-box-description {
+        height: 100px;
+        p {
+
+            font-size: 14px;
+            font-family: $font-text !important;
+            line-height: 120%;
+            color: #432818;
+
+        }
+    }
+
+    .project-box-tag {
+        margin: 5px auto;
+    }
+
+    .project-box-investor p {
+        color: #F39200;
+        line-height: 1.2em;
+        height: 1.2em;
+        display:inline;
+    }
+    .project-box-investor span{
+        margin-left:18%;
+    }
+
+    .btn-tag {
+        font-family: $font-text;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #666;
+        background-color: #dbdbdb;
+        border-radius: 0;
+        padding: 1px 5px;
+    }
+
+    .project-box-data {
+        .padding-left {
+            padding-right: 5px;
+        }
+        .padding-right {
+            padding-left: 5px;
+        }
+    }
+
+    .project-box-single-data {
+        border: 1px solid rgb(221,221,221);
+        font-size: 20px;
+        font-weight: 900;
+        display: block;
+        text-align: center;
+        span {
+            color: $brand-brown;
+        }
+
+    }
+    .project-box-single-text {
+
+        .brown, .grey {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: $font-text;
+            display: block;
+            text-align: center;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        .brown {
+            background-color: $brand-brown;
+            color: white;   
+        }
+
+        .grey {
+            background-color: #CAB8AF;
+            color: $brand-brown;
+        }
+
+
+    }
+
+    .project-box-ribbon {
+        h3 {
+            font-family: $font-text;
+            font-size:12px;
+            font-weight:900;
+            line-height:120%;
+            color:rgb(255,255,255);
+            text-align:center;
+            padding-top:2px;
+            text-transform: uppercase;
+        }
+    }
+
+    .ribbon-completed {
+        height: 20px;
+        margin-top: -25px;
+        background:url("../img/cartelas/finalizado.svg") no-repeat center;
+        margin-bottom: 3px;
+    }
+
+    .ribbon-noncompleted {
+        height: 20px;
+        margin-top: -25px;
+        background:url("../img/cartelas/no_completado.svg") no-repeat center;
+        margin-bottom: 3px;
+    }
+
+    .ribbon-accepted {
+        height: 20px;
+        margin-top: -25px;
+        background:url("../img/cartelas/activo.svg") no-repeat center;
+        margin-bottom: 3px;
+    }
+
+    .ribbon-precampaign {
+        height: 20px;
+        margin-top: -25px;
+        background:url("../img/cartelas/pre_camp.svg") no-repeat center;
+        margin-bottom: 3px;
+    }
+
+    .project-box-progress {
+        margin-bottom: -13px;
+    }
+
+    .project-box-invest {
+        .btn-invest {
+            width: 100%;
+            border: none;
+            background-color: $brand-orange;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: $brand-brown;
+            font-size: 16px;
+            margin-top: 5px;
+            border-radius: 0;
+        }
+    }
+
+
+}
+
+
+
+

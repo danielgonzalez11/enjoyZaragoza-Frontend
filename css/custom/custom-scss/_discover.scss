@@ -1,0 +1,49 @@
+#discover-main-block {
+    background-color: $brand-brown;
+    min-height: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .padding-fixing {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    h2 {
+        color: $brand-orange;
+        font-size: 26px;
+        text-align: center;
+        line-height: 120%;
+        margin-bottom: 30px;
+    }
+
+    .discover-btns {
+        text-align: center;
+        .btn, .btn-group {
+            width: 100%;
+            border-radius: 0;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 16px;
+            color: $brand-brown !important;
+        }
+    }
+}
+
+#discover-results {
+    margin: 60px auto;
+    h2 {
+        text-align: center;
+        color: $brand-brown;
+        font-size: 26px;
+        border-bottom: 2px solid $brand-brown;
+    }
+}
+
+.discover-pagination {
+    text-align: center;
+}

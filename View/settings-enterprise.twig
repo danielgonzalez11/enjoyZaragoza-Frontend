@@ -1,0 +1,241 @@
+<form>
+  <input type="hidden" name="typeof-investor" value="enterprise" />
+  <input id="enterprise-legal-form" type="hidden" name="legal_form" value="" />
+
+  <div id="enterprise-provable-menu" class="payment-sub-option">
+      <h3 class="text-center">La Ley considera empresa de gran activo aquella que reúna al menos dos de estas tres características. Por favor, marque las casillas correspondientes.</h3>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+
+          <label for="check-1" class="check-auth checkbox-inline">
+              <input type="checkbox" name="check-1" id="check-1" value="1">
+              El total de las partidas de su activo es igual o superior a 1 millón de euros.
+          </label>
+
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+
+          <label for="check-2" class="check-auth checkbox-inline">
+              <input type="checkbox" name="check-2" id="check-2" value="1">
+              El importe de su cifra anual de negocios es igual o superior a 2 millones de euros.
+          </label>
+
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+
+          <label for="check-3" class="check-auth checkbox-inline">
+              <input type="checkbox" name="check-3" id="check-3" value="1">
+              Sus recursos propios son iguales o superiores a 300.000 euros.
+          </label>
+
+      </div>
+  </div>
+
+  <div id="enterprise-profesional-disclaimer" class="enterprise-disclaimer">
+      <p>Por favor, escoja la categoría de inversor profesional a la pertenece, según el artículo 78 bis 3 de la Ley 24/1988 del Mercado de Valores.</p>
+  </div>
+
+  <div id="enterprise-others-disclaimer" class="enterprise-disclaimer">
+      <p>La Bolsa Social le considera inversor no acreditado y no podrá invertir más de 3.000 € en este proyecto.</p>
+      <p>(Si desea invertir más de 3.000 €, por favor póngase en contacto con nosotros a través de <a href="mailto:acreditacion@bolsasocial.com">acreditacion@bolsasocial.com</a>. Se le pedirá que cumplimente un cuestionario de idoneidad y nos remita documentos acreditativos)</p>
+  </div>
+
+  <div id="type-of-investor-group" class="form-group">
+      <label for="type-of-investor" class="pull-left">
+        <span class="label-text">Tipo de empresa acreditada:</span>
+      </label>
+      <div class="form-control-wrap">
+        <select class="form-control form-control-inline" id="type-of-investor" name="e_type" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="CUSTOM">Otro</option>
+        </select>
+      </div>
+  </div>
+
+
+
+  <div id="enterprise-form">
+
+    <div class="form-group">
+      <label for="enterprise-name" class="pull-left">
+        <span class="label-text">Razón social:</span>
+      </label>
+      <label for="enterprise-name" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+      <div class="form-control-wrap">
+        <input type="text" class="form-control form-control-inline" id="enterprise-name" name="business_name" required minlength="3" maxlength="40" value="" placeholder="Razón Social">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="cif" class="pull-left">
+            <span class="label-text">Cif:</span>
+          </label>
+          <label for="cif" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+          <div class="form-control-wrap">
+            <input type="text" class="form-control form-control-inline" id="cif" name="e_id_number" maxlength="20" required value="" placeholder="XXXXXXXX">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-offset-1 col-md-7">
+        <div class="form-group">
+          <label for="type-of-enterprise" class="pull-left">
+            <span class="label-text">Tipo de persona jurídica:</span>
+          </label>
+          <div class="form-control-wrap">
+            <select class="form-control form-control-inline" id="type-of-enterprise" name="e_type" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="S.EN.C.POR.A.">Sociedad Comanditaria por Acciones</option>
+              <option value="CUSTOM">Otro</option>
+            </select>
+            <input type="text" class="form-control form-control-inline" id="custom-type-of-enterprise" name="e_custom_type" minlength="2" maxlength="50" required value="" placeholder="Escribe aquí el tipo de persona jurídica">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="enterprise-form-name" class="pull-left">
+        <span class="label-text">Nombre:</span>
+      </label>
+      <label for="enterprise-form-name" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+      <div class="form-control-wrap">
+        <input type="text" class="form-control form-control-inline" id="enterprise-form-name" name="name" minlength="2" maxlength="60" required value="" placeholder="Escribe aquí tu nombre">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="enterprise-form-surname" class="pull-left">
+        <span class="label-text">Apellido:</span>
+      </label>
+      <label for="enterprise-form-surname" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+      <div class="form-control-wrap">
+        <input type="text" class="form-control form-control-inline" id="enterprise-form-surname" name="surname" minlength="2" maxlength="60" required value="" placeholder="Escribe aquí tus apellidos">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="occupation" class="pull-left">
+            <span class="label-text">Cargo en la empresa:</span>
+          </label>
+          <label for="occupation" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+          <div class="form-control-wrap">
+            <input type="text" class="form-control form-control-inline" id="occupation" name="job" minlength="2" maxlength="32" required value="" placeholder="Cargo en la empresa">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 checkbox">
+        <label for="check-enterprise-auth" class="check-auth checkbox-inline">
+            <input type="checkbox" name="check-enterprise-auth" required="" id="check-enterprise-auth" value="1"> 
+            Tengo capacidad legal para comprometer la inversión en nombre de la entidad.
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5">
+        <div class="form-group">
+          <label for="enterprise-form-phone" class="pull-left">
+            <span class="label-text">Teléfono:</span>
+          </label>
+          <label for="enterprise-form-phone" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+          <div class="form-control-wrap">
+            <input type="text" class="form-control form-control-inline" id="enterprise-form-phone" name="e_phone" minlength="9" maxlength="16" required value="" placeholder="+34 XXXXXXXXX">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-offset-1 col-md-6">
+        <div class="form-group">
+          <label for="enterprise-form-nationality" class="pull-left">
+            <span class="label-text">Nacionalidad:</span>
+          </label>
+          <div class="form-control-wrap">
+            <select class="form-control form-control-inline" id="enterprise-form-nationality" name="e_nationality" required>
+              <option value="86">Islas Georgias del Sur y Sandwich del Sur</option>
+              <option value="196">Senegal</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-8">
+      <div class="form-group">
+        <label for="enterprise-form-address" class="pull-left">
+          <span class="label-text">Dirección:</span>
+        </label>
+        <label for="enterprise-form-address" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="enterprise-form-address" name="e_address" minlength="5" maxlength="255" required value="" placeholder="C/ ...">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="enterprise-form-addressNum" class="pull-left">
+          <span class="label-text">Número:</span>
+        </label>
+        <label for="enterprise-form-addressNum" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="enterprise-form-addressNum" name="e_address_num" minlength="1" maxlength="10" required value="" placeholder="XX">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-1 col-md-5">
+      <div class="form-group">
+        <label for="enterprise-form-postcode" class="pull-left">
+          <span class="label-text">Código postal:</span>
+        </label>
+        <label for="enterprise-form-postcode" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="enterprise-form-postcode" name="e_postcode" minlength="5" maxlength="10" required value="" placeholder="XXXXX">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="enterprise-form-city" class="pull-left">
+          <span class="label-text">Ciudad:</span>
+        </label>
+        <label for="enterprise-form-city" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="enterprise-form-city" name="e_city" minlength="2" maxlength="50" required value="" placeholder="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-1 col-md-6">
+      <div class="form-group">
+        <label for="enterprise-form-province" class="pull-left">
+          <span class="label-text">Provincia:</span>
+        </label>
+        <label for="enterprise-form-province" class="pull-right"><span class="btn btn-link btn-edit">Editar</span></label>
+        <div class="form-control-wrap">
+          <input type="text" class="form-control form-control-inline" id="enterprise-form-province" name="e_state" minlength="2" maxlength="50" required value="" placeholder="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="form-group">
+        <label for="enterprise-form-country" class="pull-left">
+          <span class="label-text">País:</span>
+        </label>
+        <div class="form-control-wrap">
+          <select class="form-control form-control-inline" id="enterprise-form-country" name="e_country" required>
+            <option value="86">Islas Georgias del Sur y Sandwich del Sur</option>
+            <option value="196">Senegal</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</form>
